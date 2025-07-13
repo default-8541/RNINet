@@ -1,6 +1,6 @@
 # Random Is All You Need: Random Noise Injection On Feature Statistics For Generalizable Deep Image Denoising
 
-Code for Random Is All You Need: Random Noise Injection On Feature Statistics For Generalizable Deep Image Denoising, ICLR 2025.
+Official pytorch implementation of ["Random Is All You Need: Random Noise Injection On Feature Statistics For Generalizable Deep Image Denoising"](https://openreview.net/forum?id=z8PcUSKXXN) in International Conference on Learning Representations (ICLR) 2025.
 
 ## Introduction
 

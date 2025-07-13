@@ -17,6 +17,7 @@ Recent advancements in generalizable deep image denoising have catalyzed the dev
 * Python: 3.9.7
 * PyTorch: 2.0.0
 * CUDA: 11.8
+* pip install -r requirements.txt
 
 ## Training
 

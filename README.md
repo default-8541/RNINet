@@ -12,8 +12,9 @@ Recent advancements in generalizable deep image denoising have catalyzed the dev
 Follow previous work, we train the model only on Gaussian noise (sigma=15), and test the model on other noise types and noise levels.
 
 You can modify the json file from options or directly use the json file provided.
-
+```
 * python train.py --opt options/denoise_args.json
+```
 
 Training datasets (SwinIR datasets): 
 
@@ -29,7 +30,7 @@ You need to download the checkpoint and put them in the model_zoo folder.
 * Checkpoint for RNINet: https://drive.google.com/file/d/104gbqzoXQ1l6MWbN_ZYK7v1tdxKNU-jS/view
 * Checkpoint for Masked Training: https://drive.google.com/file/d/1OybE6HqyOYQo_lYzn6HI9XKHf-R-dbbk/view
 
-You can run the notebook file "test_model.ipynb" to obtain test results/
+You can run the notebook file "test_model.ipynb" to obtain test results。
 
 Testsets:
 
@@ -40,7 +41,7 @@ Testsets:
   
 ## Citation
 If you find our work or code is useful for your research, please kindly cite our paper.
-
+```
 @inproceedings{
 yin2025random,
 title={Random Is All You Need: Random Noise Injection on Feature Statistics for Generalizable Deep Image Denoising},
@@ -49,4 +50,5 @@ booktitle={The Thirteenth International Conference on Learning Representations},
 year={2025},
 url={https://openreview.net/forum?id=z8PcUSKXXN}
 }
+```
 

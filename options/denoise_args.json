@@ -1,0 +1,42 @@
+{
+  "args": {
+    "task_name":"denoise",
+    "seed": 1024,
+    "io_iter": 100,
+    "test_iter": 500,
+    "lr": 1e-4,
+    "device": "cuda:0",
+    "epochs": 10000000,
+    "warm_up": false,
+    "testset": "McMaster",
+    "test":100,
+    "label":"sigma_15"
+  },
+  "dataset_opt": {
+    "train": {
+      "name": "train_dataset",
+      "phase": "train",
+      "dataset_type": "dncnn",
+      "dataroot_H": "/home/datasets/swinir_dataset",
+      "dataroot_L": null,
+      "H_size": 128,
+      "sigma": 15,
+      "sigma_test": 15,
+      "n_channels": 3,
+      "dataloader_shuffle": true,
+      "dataloader_num_workers": 16,
+      "dataloader_batch_size": 8
+    },
+    "test": {
+      "name": "test_dataset",
+      "phase": "test",
+      "dataset_type": "dncnn",
+      "dataroot_H": "/home/testsets/McMaster",
+      "dataroot_L": null,
+      "sigma": 15,
+      "sigma_test": 15,
+      "n_channels": 3,
+      "H_size": 128
+    }
+  }
+}

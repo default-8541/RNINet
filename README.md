@@ -11,6 +11,13 @@ Recent advancements in generalizable deep image denoising have catalyzed the dev
   <img src="./figs/feature_shift.png" alt="熊猫2" width="380" height="200" />
 </p>
 
+
+## Requirements
+
+Python: 3.9.7
+PyTorch: 2.0.0
+CUDA: 11.8
+
 ## Training
 
 Following previous work, we train the model exclusively on Gaussian noise (σ=15) and evaluate it on various noise types and levels.

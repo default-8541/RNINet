@@ -37,5 +37,16 @@ Testsets:
 * CBSD68
 * Kodak24
 * Urban100
+  
+## Citation
+If you find our work or code is useful for your research, please kindly cite our paper.
 
+@inproceedings{
+yin2025random,
+title={Random Is All You Need: Random Noise Injection on Feature Statistics for Generalizable Deep Image Denoising},
+author={Zhengwei Yin and Hongjun Wang and Guixu Lin and Weihang Ran and Yinqiang Zheng},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=z8PcUSKXXN}
+}
 

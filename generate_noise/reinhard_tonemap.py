@@ -105,7 +105,7 @@ def whiteBalance_mat(img, mat):
 if __name__ == "__main__":
     args = parse_args()
     cfgs = vars(args)
-    base_dir = '/home/yinqiang/yzw/datasets'
+    base_dir = '/home/datasets'
     epsilon = 1e-6
     # if_img = cfgs['tm_img']
     # key_fac = cfgs.get('key_fac', 0.100)

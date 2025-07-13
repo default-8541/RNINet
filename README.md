@@ -13,19 +13,28 @@ Recent advancements in generalizable deep image denoising have catalyzed the dev
 
 ## Training
 
-Follow previous work, we train the model only on Gaussian noise (sigma=15), and test the model on other noise types and noise levels.
+Following previous work, we train the model exclusively on Gaussian noise (σ=15) and evaluate it on various noise types and levels.
 
-You can modify the json file from options or directly use the json file provided.
+**Usage Instructions:**
+
+To run the training:
+
+1. Modify the parameters in the JSON configuration file, **or**
+
+2. Directly use the provided JSON file:
+
 ```
-* python train.py --opt options/denoise_args.json
+python train.py --opt options/denoise_args.json
 ```
 
-Training datasets (SwinIR datasets): 
+Training Datasets (SwinIR Datasets): 
 
 * DIV2K
 * Flickr2K
 * BSD500
 * WED
+
+(*Combine these datasets for training.*)
 
 ## Testing
 
@@ -34,7 +43,7 @@ You need to download the checkpoint and put them in the model_zoo folder.
 * Checkpoint for RNINet: https://drive.google.com/file/d/104gbqzoXQ1l6MWbN_ZYK7v1tdxKNU-jS/view
 * Checkpoint for Masked Training: https://drive.google.com/file/d/1OybE6HqyOYQo_lYzn6HI9XKHf-R-dbbk/view
 
-You can run the notebook file `test_model.ipynb` to obtain poisson denoising results.
+You can run the notebook file `test_model.ipynb` to obtain **Poisson denoising** results. (Replace `data_path` with your testset.)
 
 For an image with **Speckle noise** and **Salt & Pepper noise**, please use the MATLAB code `generate_noise/add_noise.m` to generate them.
 
